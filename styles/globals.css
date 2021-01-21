@@ -1,6 +1,7 @@
 :root {
   --teal: rgb(0, 128, 115);
   --brown: rgb(121, 85, 72);
+  --tealLine: #009688;
 }
 html,
 body {

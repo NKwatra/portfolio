@@ -1,15 +1,16 @@
 import Head from "next/head";
 import { useState } from "react";
 import Header from "../src/components/Header";
+import Home from "../src/components/Home";
 import Sidebar from "../src/components/Sidebar";
-import styles from "../styles/Home.module.css";
+import styles from "../src/styles/index.module.css";
 
-export default function Home() {
+export default function Index() {
   const [activeIndex, setActiveIndex] = useState(-1);
   return (
-    <div className={styles.container}>
+    <div className="container-fluid px-0">
       <Head>
-        <title>Create Next App</title>
+        <title>Nishkarsh Kwatra | Full Stack Developer</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -19,6 +20,9 @@ export default function Home() {
       </Head>
       <Header setActiveIndex={setActiveIndex} />
       <Sidebar activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+      <main className={styles.content}>
+        <Home />
+      </main>
     </div>
   );
 
