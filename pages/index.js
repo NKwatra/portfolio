@@ -1,27 +1,24 @@
 import Head from "next/head";
+import { useState } from "react";
+import Header from "../src/components/Header";
 import Sidebar from "../src/components/Sidebar";
 import styles from "../styles/Home.module.css";
 
-const options = [
-  { title: "About" },
-  { title: "Experience" },
-  { title: "Projects" },
-  { title: "Skills" },
-  { title: "Awards" },
-  { title: "Education" },
-  { title: "Contact" },
-  { title: "Blog" },
-  { title: "Resume" },
-];
-
 export default function Home() {
+  const [activeIndex, setActiveIndex] = useState(-1);
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+          rel="stylesheet"
+        />
       </Head>
-      <Sidebar options={options} />
+      <Header setActiveIndex={setActiveIndex} />
+      <Sidebar activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
     </div>
   );
 

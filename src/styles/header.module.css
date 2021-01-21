@@ -1,0 +1,42 @@
+.header {
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.name {
+  color: var(--teal);
+  font-weight: 400;
+}
+
+.profile {
+  color: var(--brown);
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    width: 190px;
+    background-color: #f2f2f2;
+    padding: 2rem 1rem;
+  }
+
+  .name,
+  .profile {
+    font-weight: 200;
+  }
+
+  .profile {
+    font-size: 0.875rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}

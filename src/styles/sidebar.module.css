@@ -5,15 +5,57 @@
   top: 0;
   width: 190px;
   background-color: #ffffff;
-  transition: left 0.3s;
+  transition: left 0.4s;
 }
 
-.sidebar li {
-  list-style: none;
+.option {
+  font-size: 0.9375rem;
+}
+
+.sidebar ul {
+  margin: 0 !important;
+  width: 100%;
+  padding: 0;
 }
 
 .navItem {
-  padding: 20px 15px;
+  list-style: none;
+  width: 100%;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.about:hover {
+  border-left: solid 3px var(--teal);
+}
+.experience:hover {
+  border-left: solid 3px #00bcd4;
+}
+.project:hover {
+  border-left: solid 3px #3f51b5;
+}
+.skill:hover {
+  border-left: solid 3px #9c27b0;
+}
+.award:hover {
+  border-left: solid 3px #f44336;
+}
+.education:hover {
+  border-left: solid 3px #ff9800;
+}
+.contact:hover {
+  border-left: solid 3px #795548;
+}
+.blog:hover {
+  border-left: solid 3px #fbc02d;
+}
+.resume:hover {
+  border-left: solid 3px #424242;
+}
+
+.navItem:hover {
+  background-color: #fafafa;
 }
 
 .hamburger {
@@ -21,6 +63,16 @@
   top: 16px;
   left: 16px;
   cursor: pointer;
+  z-index: 100;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  transition: left 0.4s;
+  color: var(--teal);
+}
+
+.hamburgerOpen {
+  left: 196px;
 }
 
 .visible {
@@ -34,6 +86,7 @@
 @media only screen and (min-width: 992px) {
   .sidebar {
     left: 0;
+    margin-top: 160px;
   }
   .hamburger {
     display: none;
