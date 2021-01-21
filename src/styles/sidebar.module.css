@@ -1,0 +1,41 @@
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  left: -220px;
+  top: 0;
+  width: 190px;
+  background-color: #ffffff;
+  transition: left 0.3s;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.navItem {
+  padding: 20px 15px;
+}
+
+.hamburger {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  cursor: pointer;
+}
+
+.visible {
+  left: 0;
+}
+
+.hidden {
+  left: -220px;
+}
+
+@media only screen and (min-width: 992px) {
+  .sidebar {
+    left: 0;
+  }
+  .hamburger {
+    display: none;
+  }
+}

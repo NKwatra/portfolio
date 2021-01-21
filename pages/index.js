@@ -1,5 +1,18 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Sidebar from "../src/components/Sidebar";
+import styles from "../styles/Home.module.css";
+
+const options = [
+  { title: "About" },
+  { title: "Experience" },
+  { title: "Projects" },
+  { title: "Skills" },
+  { title: "Awards" },
+  { title: "Education" },
+  { title: "Contact" },
+  { title: "Blog" },
+  { title: "Resume" },
+];
 
 export default function Home() {
   return (
@@ -8,14 +21,18 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Sidebar options={options} />
+    </div>
+  );
 
-      <main className={styles.main}>
+  {
+    /* <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by editing{" "}
           <code className={styles.code}>pages/index.js</code>
         </p>
 
@@ -56,10 +73,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
-    </div>
-  )
+    </div> */
+  }
 }
