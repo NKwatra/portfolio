@@ -1,0 +1,103 @@
+.pointer {
+  cursor: pointer;
+}
+
+.teal {
+  color: var(--teal);
+}
+
+.cover {
+  max-height: 80vmin;
+}
+
+.menu {
+  font-size: 1.5rem;
+}
+
+.lineHeight {
+  line-height: 150%;
+}
+
+.listItem {
+  line-height: 200%;
+}
+
+.line {
+  height: 1px;
+  background-color: #dddddd;
+  margin-top: 8px;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+}
+
+.actionContainer {
+  position: absolute;
+  bottom: 16px;
+  left: 40px;
+  width: 100%;
+}
+
+.action {
+  background-color: var(--brown);
+  color: #ffffff;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.actionIcon {
+  font-size: 1.8rem;
+}
+
+.action:hover {
+  color: #ffffff;
+}
+
+.extra {
+  height: 0%;
+  position: absolute;
+  top: 100%;
+  transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.show {
+  top: 0%;
+  height: 100%;
+}
+
+.tooltip {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 16px 24px;
+  position: absolute;
+  bottom: 80px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--brown);
+  cursor: pointer;
+}
+
+.extraHeading {
+  color: var(--brown);
+}
+
+@media (min-width: 992px) {
+  .cover {
+    max-height: 50vmin;
+  }
+}

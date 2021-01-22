@@ -7,6 +7,7 @@ const ExperienceTile = ({
   profile,
   summary,
   details: { product },
+  duration,
 }) => {
   return (
     <div className={`${styles.tile} my-5`}>
@@ -34,6 +35,9 @@ const ExperienceTile = ({
           ))}
         </ul>
       </p>
+      <p className={`${styles.durationContainer}`}>
+        <span className={styles.duration}>{duration}</span>
+      </p>
     </div>
   );
 };
@@ -57,6 +61,7 @@ const experience = [
         "Tools: Ruby, Rails, PostgreSQL // React, JS, jQuery // Sass // HTML, JSX, Haml",
       ],
     },
+    duration: "Feb 2010 - Sept 2011 | Pawtucket, RI",
   },
   {
     company: {
@@ -76,6 +81,7 @@ const experience = [
         "Tools: Ruby, Rails, PostgreSQL // React, JS, jQuery // Sass // HTML, JSX, Haml",
       ],
     },
+    duration: "Feb 2010 - Sept 2011 | Pawtucket, RI",
   },
 ];
 

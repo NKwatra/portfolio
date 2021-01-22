@@ -4,6 +4,7 @@ import About from "../src/components/About";
 import Experience from "../src/components/Experience";
 import Header from "../src/components/Header";
 import Home from "../src/components/Home";
+import Project from "../src/components/Project";
 import Sidebar from "../src/components/Sidebar";
 import styles from "../src/styles/index.module.css";
 
@@ -26,6 +27,7 @@ export default function Index() {
         <Home />
         <About />
         <Experience />
+        <Project />
       </main>
     </div>
   );

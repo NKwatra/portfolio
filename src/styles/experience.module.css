@@ -3,6 +3,7 @@
   margin-left: 5%;
   background-color: #ffffff;
   padding: 1.25rem;
+  padding-bottom: 0;
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
   position: relative;
 }
@@ -25,6 +26,18 @@
   height: 1px;
   background-color: #dddddd;
   margin-top: 8px;
+}
+
+.durationContainer {
+  background: rgba(0, 0, 0, 0.02);
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 16px;
+}
+
+.duration {
+  font-size: 85%;
+  color: var(--gray);
 }
 
 .profile {

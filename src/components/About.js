@@ -41,7 +41,7 @@ export default function About() {
         <div className={`px-lg-5 ${styles.focus} mb-5`}>
           <span className="font-weight-bold">Current Focus: </span>
           {focii.map((focus, index) => (
-            <a href={focus.href}>
+            <a href={focus.href} key={`${index}`}>
               {focus.label}
               {index === focii.length - 1 ? null : " // "}
             </a>
