@@ -3,6 +3,7 @@
   --brown: rgb(121, 85, 72);
   --tealLine: #009688;
 }
+
 html,
 body {
   background: url("/bg.png");

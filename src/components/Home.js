@@ -3,6 +3,7 @@ export default function Home() {
   return (
     <section
       className={`${styles.container} d-flex justify-content-center align-items-center`}
+      id="Home"
     >
       <h2 className={`display-4 ${styles.title}`}>
         <div>

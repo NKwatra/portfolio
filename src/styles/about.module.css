@@ -1,0 +1,30 @@
+.detail {
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: 300;
+}
+
+.brownText {
+  color: var(--brown);
+  border-left: solid 5px var(--brown);
+}
+
+.focus > a {
+  color: var(--teal);
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.focus > a:hover {
+  text-decoration: none;
+}
+
+.quote {
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .detail {
+    line-height: 200%;
+  }
+}

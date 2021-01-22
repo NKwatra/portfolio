@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiBarChart2Fill, RiTableLine } from "react-icons/ri";
+import { Link } from "react-scroll";
 import styles from "../styles/sidebar.module.css";
 
 const options = [
@@ -81,19 +82,28 @@ export default function Sidebar({ activeIndex, setActiveIndex }) {
       </div>
       <ul>
         {options.map((option, index) => (
-          <li
-            className={`${styles.navItem} ${option.className} d-flex align-items-center`}
-            onClick={() => setActiveIndex(index)}
+          <Link
+            key={option.title}
+            to={option.title}
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-70}
           >
-            {option.icon}
-            <span
-              className={`${styles.option} ml-3 font-weight-light ${
-                activeIndex === index ? "font-weight-bold" : ""
-              }`}
+            <li
+              className={`${styles.navItem} ${option.className} d-flex align-items-center`}
+              onClick={() => setActiveIndex(index)}
             >
-              {option.title}
-            </span>
-          </li>
+              {option.icon}
+              <span
+                className={`${styles.option} ml-3 font-weight-light ${
+                  activeIndex === index ? "font-weight-bold" : ""
+                }`}
+              >
+                {option.title}
+              </span>
+            </li>
+          </Link>
         ))}
       </ul>
     </nav>

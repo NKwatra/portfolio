@@ -1,0 +1,10 @@
+.container {
+  color: #ffffff;
+  background-color: var(--teal);
+  font-weight: 100 !important;
+  text-transform: uppercase;
+}
+
+.defaultFont {
+  font-family: var(--font-family-sans-serif) !important;
+}

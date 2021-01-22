@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
+import About from "../src/components/About";
 import Header from "../src/components/Header";
 import Home from "../src/components/Home";
 import Sidebar from "../src/components/Sidebar";
@@ -14,7 +15,7 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -22,6 +23,7 @@ export default function Index() {
       <Sidebar activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
       <main className={styles.content}>
         <Home />
+        <About />
       </main>
     </div>
   );
