@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsEnvelopeFill, BsFillPersonFill, BsStarFill } from "react-icons/bs";
+import { BsEnvelopeFill, BsFillPersonFill } from "react-icons/bs";
 import {
   FaChartLine,
   FaGraduationCap,
@@ -32,11 +32,11 @@ const options = [
     className: styles.skill,
     icon: <RiBarChart2Fill style={{ fontSize: "2rem", color: "#9c27b0" }} />,
   },
-  {
-    title: "Awards",
-    className: styles.award,
-    icon: <BsStarFill style={{ fontSize: "2rem", color: "#f44336" }} />,
-  },
+  // {
+  //   title: "Awards",
+  //   className: styles.award,
+  //   icon: <BsStarFill style={{ fontSize: "2rem", color: "#f44336" }} />,
+  // },
   {
     title: "Education",
     className: styles.education,

@@ -96,7 +96,7 @@ const ProjectTile = ({ title, github, live, desc, cover, techStack }) => {
   const [showCodeTooltip, setShowCodeTooltip] = useState(false);
   return (
     <div className="col-12 col-md-6 col-lg-4">
-      <div className="card w-100 my-3 position-relative">
+      <div className={`card w-100 my-3 position-relative ${styles.shadow}`}>
         <img
           src={cover}
           className={`card-img-top ${styles.pointer} ${styles.cover}`}
