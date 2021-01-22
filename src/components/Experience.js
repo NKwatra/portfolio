@@ -13,6 +13,7 @@ const ExperienceTile = ({
     <div className={`${styles.tile} my-5`}>
       <a
         href={link}
+        target="_blank"
         className={`d-flex flex-column justify-content-center align-items-center ${styles.anchor}`}
       >
         <Image src={logo} width={80} height={80} className={styles.logo} />
