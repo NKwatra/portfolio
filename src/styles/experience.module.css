@@ -1,0 +1,80 @@
+.tile {
+  width: 90%;
+  margin-left: 5%;
+  background-color: #ffffff;
+  padding: 1.25rem;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  position: relative;
+}
+
+.tile li {
+  line-height: 150%;
+}
+
+.tile > a:hover {
+  text-decoration: none;
+  cursor: default;
+  /* border-bottom: solid 3px var(--teal); */
+}
+
+.name {
+  color: var(--teal);
+}
+
+.line {
+  height: 1px;
+  background-color: #dddddd;
+  margin-top: 8px;
+}
+
+.profile {
+  color: var(--brown);
+  font-weight: 400;
+}
+
+.summary {
+  color: var(--gray);
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.subHeading {
+  color: var(--lightGray);
+}
+
+@media (min-width: 992px) {
+  .profile {
+    position: absolute;
+    top: 16px;
+    right: 48px;
+  }
+
+  .tile {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+
+  .anchor {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    width: 40%;
+    margin-left: 16px;
+  }
+
+  .name {
+    margin-left: 2rem;
+    cursor: pointer;
+  }
+
+  .name:hover {
+    border-bottom: solid 3px var(--teal);
+  }
+
+  .logo {
+    cursor: pointer;
+  }
+
+  .tile li {
+    line-height: 200%;
+  }
+}

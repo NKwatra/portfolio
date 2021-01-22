@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import About from "../src/components/About";
+import Experience from "../src/components/Experience";
 import Header from "../src/components/Header";
 import Home from "../src/components/Home";
 import Sidebar from "../src/components/Sidebar";
@@ -24,6 +25,7 @@ export default function Index() {
       <main className={styles.content}>
         <Home />
         <About />
+        <Experience />
       </main>
     </div>
   );
