@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import About from "../src/components/About";
+import Contact from "../src/components/Contact";
 import Education from "../src/components/Education";
 import Experience from "../src/components/Experience";
 import Header from "../src/components/Header";
@@ -32,6 +33,7 @@ export default function Index() {
         <Project />
         <Skills />
         <Education />
+        <Contact />
       </main>
     </div>
   );

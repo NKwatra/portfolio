@@ -1,0 +1,54 @@
+.entry {
+  cursor: default;
+  color: var(--teal);
+}
+
+.entry:hover {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.label {
+  cursor: pointer;
+}
+
+.label:hover {
+  border-bottom: solid 3px var(--teal);
+}
+
+.tooltip {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 16px 24px;
+  position: absolute;
+  bottom: 80px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.visible {
+  opacity: 1;
+}
+
+.iconContainer {
+  background-color: var(--brown);
+  color: #ffffff;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+@media (min-width: 992px) {
+  .label {
+    font-size: 1.25rem;
+    margin-left: 1.5rem !important;
+    margin-bottom: 16px;
+  }
+  .entry {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    padding-left: 48px;
+  }
+}

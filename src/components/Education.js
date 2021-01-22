@@ -38,7 +38,7 @@ export default function Education() {
   return (
     <section id="Education">
       <SectionHeader title="Education" />
-      <div className="d-flex flex-wrap">
+      <div className="d-flex flex-wrap my-5 py-5">
         {education.map((ed) => (
           <EducationTile {...ed} />
         ))}
