@@ -42,23 +42,25 @@ const ContactRow = ({ cnt }) => {
   const [showTooltip, setShowTooltip] = useState(false);
   return (
     <>
-      <a
-        href={cnt.link}
-        target="_blank"
-        className={`${styles.entry} position-relative d-inline-block my-3`}
-      >
-        <span
-          className={styles.iconContainer}
-          onMouseOver={() => setShowTooltip(true)}
-          onMouseOut={() => setShowTooltip(false)}
-        >
-          <span className="ml-3 d-inline-block mt-3">{cnt.icon}</span>
-        </span>
-        <span className={`ml-3 d-inline-block ${styles.label} mt-3`}>
-          {cnt.label}
-        </span>
+      <div className={`position-relative my-3 ${styles.entry}`}>
+        <div className="text-center">
+          <a
+            className={`${styles.iconContainer} pt-3 ${styles.anchor}`}
+            onMouseOver={() => setShowTooltip(true)}
+            onMouseOut={() => setShowTooltip(false)}
+            href={cnt.link}
+            target="_blank"
+          >
+            {cnt.icon}
+          </a>
+        </div>
+        <div className={`text-center pt-2 ml-lg-3 pt-lg-3`}>
+          <a href={cnt.link} target="_blank" className={styles.anchorText}>
+            {cnt.label}
+          </a>
+        </div>
         <Tooltip label={cnt.tooltipLabel} active={showTooltip} />
-      </a>
+      </div>
       <br />
     </>
   );
