@@ -27,6 +27,7 @@
 
 .skillImage {
   width: 60px;
+  height: 60px;
 }
 
 @media (min-width: 992px) {
@@ -36,5 +37,6 @@
 
   .skillImage {
     width: 100px;
+    height: 100px;
   }
 }

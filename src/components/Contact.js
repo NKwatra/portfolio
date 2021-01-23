@@ -68,7 +68,7 @@ const ContactRow = ({ cnt }) => {
 
 export default function Contact() {
   return (
-    <section id="Contact">
+    <section id="Contact" className="vh-100">
       <SectionHeader title="Contact" />
       <div className="py-5 my-5">
         {contact.map((cnt) => (

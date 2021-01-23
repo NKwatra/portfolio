@@ -3,16 +3,24 @@ import SectionHeader from "./SectionHeader";
 
 const education = [
   {
-    name: "UNIVERSITY OF PENNSYLVANIA",
-    place: "Philadelphia, PA",
-    details: ["B.A. in Psychology", "Summa Cum Laude"],
-    link: "#",
+    name: "GURU GOBIND SINGH INDRAPRATHA UNIVERSITY",
+    place: "Delhi, India | 2017-2021",
+    details: [
+      "B.Tech in Computer Science Engineering(CSE)",
+      'GPA: <span class="font-weight-bolder">8.9</span>/10 (May, 2020)',
+      "Coursework: Algorithms, Programming Languages, Database Management Systems(DBMS), Object-Oriented Programming(OOP), Data Structures, etc.",
+    ],
+    link: "http://www.ipu.ac.in",
   },
   {
-    name: "UNIVERSITY OF PENNSYLVANIA",
-    place: "Philadelphia, PA",
-    details: ["B.A. in Psychology", "Summa Cum Laude"],
-    link: "#",
+    name: "D.A.V PUBLIC SCHOOL",
+    place: "Delhi, India | 2016-2017",
+    details: [
+      "High School - Science with Computer Science(CS)",
+      'Score: <strong class="font-weight-bolder">94.2%</strong>(CBSE)',
+      "Coursework: Physics, Chemistry, Mathematics, English, Computer Science, etc.",
+    ],
+    link: "http://davsreshtha.com/",
   },
 ];
 
@@ -27,7 +35,7 @@ const EducationTile = ({ name, place, details, link }) => {
       <div className={styles.place}>{place}</div>
       <ul>
         {details.map((detail) => (
-          <li key={detail}>{detail}</li>
+          <li key={detail} dangerouslySetInnerHTML={{ __html: detail }} />
         ))}
       </ul>
     </div>

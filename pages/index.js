@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import About from "../src/components/About";
 import Contact from "../src/components/Contact";
 import Education from "../src/components/Education";
@@ -11,8 +11,49 @@ import Sidebar from "../src/components/Sidebar";
 import Skills from "../src/components/Skills";
 import styles from "../src/styles/index.module.css";
 
+const Sections = [
+  "Home",
+  "About",
+  "Experience",
+  "Projects",
+  "Skills",
+  "Education",
+  "Contact",
+];
+
 export default function Index() {
   const [activeIndex, setActiveIndex] = useState(-1);
+  const [elementPositions, setElementPositions] = useState([]);
+
+  useEffect(() => {
+    const bodyReact = document.body.getBoundingClientRect();
+    setElementPositions(
+      Sections.map(
+        (section) =>
+          document.getElementById(section).getBoundingClientRect().top -
+          bodyReact.top
+      )
+    );
+  }, []);
+
+  useEffect(() => {
+    const sectionActivator = () => {
+      let currentScroll = document.documentElement.scrollTop;
+      console.log(currentScroll);
+      let index = elementPositions.length - 2;
+      for (let i = 1; i < elementPositions.length; i++) {
+        if (elementPositions[i] > currentScroll) {
+          index = i - 2;
+          break;
+        }
+      }
+      setActiveIndex(index);
+    };
+
+    document.addEventListener("scroll", sectionActivator, { passive: true });
+    () => document.removeEventListener(sectionActivator);
+  }, [elementPositions]);
+
   return (
     <div className="container-fluid px-0">
       <Head>

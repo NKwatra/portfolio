@@ -7,73 +7,32 @@ import SectionHeader from "./SectionHeader";
 
 const projects = [
   {
-    title: "Code Island",
-    github: "",
-    live: "",
+    title: "Sunshine",
+    github: "https://github.com/NKwatra/Sunshine",
+    live:
+      "https://github.com/NKwatra/Sunshine/releases/download/v1.0.0/Sunshine.apk",
     desc:
-      "Online headquarters for the local Code for America brigade in Rhode Island.",
-    cover: "/code-island.jpg",
+      "A cross platform mobile application that gives weather forecast for next 16 days",
+    cover: "/sunshine.png",
     techStack: [
-      "Ruby on Rails backend",
-      "Bulma CSS frontend",
-      "String interpolation via recursion",
-      "Dependency free JS config",
+      "Developed in <strong>React-Native</strong> using Expo.",
+      "Supports units preference setting to either Imperial or Metric.",
+      "Loads weather based on current location or predefined state.",
+      "Synchornises data automatically every 6 hours and stores it locally for offline viewing.",
     ],
   },
   {
-    title: "Code Island",
-    github: "",
-    live: "",
-    desc:
-      "Online headquarters for the local Code for America brigade in Rhode Island.",
-    cover: "/code-island.jpg",
+    title: "Movify",
+    github: "https://github.com/NKwatra/Movify",
+    live:
+      "https://github.com/NKwatra/Movify/releases/download/v1.0.0/movify.apk",
+    desc: "An android application to search for latest movies and trailers",
+    cover: "/movify.png",
     techStack: [
-      "Ruby on Rails backend",
-      "Bulma CSS frontend",
-      "String interpolation via recursion",
-      "Dependency free JS config",
-    ],
-  },
-  {
-    title: "Code Island",
-    github: "#",
-    live: "#",
-    desc:
-      "Online headquarters for the local Code for America brigade in Rhode Island.",
-    cover: "/code-island.jpg",
-    techStack: [
-      "Ruby on Rails backend",
-      "Bulma CSS frontend",
-      "String interpolation via recursion",
-      "Dependency free JS config",
-    ],
-  },
-  {
-    title: "Code Island",
-    github: "",
-    live: "",
-    desc:
-      "Online headquarters for the local Code for America brigade in Rhode Island.",
-    cover: "/code-island.jpg",
-    techStack: [
-      "Ruby on Rails backend",
-      "Bulma CSS frontend",
-      "String interpolation via recursion",
-      "Dependency free JS config",
-    ],
-  },
-  {
-    title: "Code Island",
-    github: "",
-    live: "",
-    desc:
-      "Online headquarters for the local Code for America brigade in Rhode Island.",
-    cover: "/code-island.jpg",
-    techStack: [
-      "Ruby on Rails backend",
-      "Bulma CSS frontend",
-      "String interpolation via recursion",
-      "Dependency free JS config",
+      "Developed using <strong>Android SDK</strong> and Java.",
+      "Integrated TmDb API for movie data and Youtube Android Player API for trialers.",
+      "SQLite Database for storing favourites for offline viewing.",
+      "Used ViewPager and Fragments for tabs and screens.",
     ],
   },
 ];
@@ -103,7 +62,7 @@ const ProjectTile = ({ title, github, live, desc, cover, techStack }) => {
           alt="project cover"
           onClick={() => setShowExtra(true)}
         />
-        <div className="card-body">
+        <div className="card-body bg-white">
           <div className="d-flex justify-content-between">
             <h5
               className={`card-title font-weight-light h4 ${styles.teal} ${styles.pointer}`}
@@ -132,13 +91,15 @@ const ProjectTile = ({ title, github, live, desc, cover, techStack }) => {
               <div
                 className={`mt-4 ml-4 ${styles.extraHeading} font-weight-light h4`}
               >
-                Technologies
+                Features
               </div>
-              <ul className="mt-lg-3 ml-lg-3">
+              <ul className="mt-lg-3 ml-lg-3 pr-1">
                 {techStack.map((stack) => (
-                  <li key={stack} className={styles.listItem}>
-                    {stack}
-                  </li>
+                  <li
+                    key={stack}
+                    className={styles.listItem}
+                    dangerouslySetInnerHTML={{ __html: stack }}
+                  />
                 ))}
               </ul>
               <div className={styles.line} />
@@ -174,7 +135,7 @@ const ProjectTile = ({ title, github, live, desc, cover, techStack }) => {
 
 export default function Project() {
   return (
-    <section id="Projects">
+    <section id="Projects" className="pb-3">
       <SectionHeader title="Projects" />
       <div className="container-fluid">
         <div className="row">

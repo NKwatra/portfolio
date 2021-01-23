@@ -32,7 +32,7 @@ const ExperienceTile = ({
         </h6>
         <ul>
           {product.map((prod) => (
-            <li key={prod}>{prod}</li>
+            <li key={prod} dangerouslySetInnerHTML={{ __html: prod }} />
           ))}
         </ul>
       </p>
@@ -46,43 +46,44 @@ const ExperienceTile = ({
 const experience = [
   {
     company: {
-      name: "WESPIRE",
-      link: "#",
-      logo: "/wespire-logo.jpg",
+      name: "Frontier Techworks",
+      link: "https://ftworks.de",
+      logo: "/ftworkslogo.png",
     },
-    profile: "Full Stack Developer",
+    profile: "Full Stack Development Intern",
     summary:
-      "SaaS platform that enables enterprise companies to build, run, and measure their positive impact campaigns.",
+      "Frontier Techworks is a global design and engineering consultancy specializing in React.js, React Native, GraphQL, Node.js, and the extended JavaScript ecosystem.",
     details: {
       product: [
-        "Contribute core features across entire stack (20k+ lines of code, 250+ pulls)",
-        "Lead front-end development, creating and documenting app-wide design system",
-        "Oversee transition from page-based styles to modular component styles",
-        "Guide best practices around accessible, semantic UI/UX",
-        "Tools: Ruby, Rails, PostgreSQL // React, JS, jQuery // Sass // HTML, JSX, Haml",
+        'Contributed to development of system for client <a href="http://digivet.co" target="_blank">DigiVet</a>.',
+        "Collaborated with a team of 6 to develop the Dashboard for DigiVet.",
+        "Developed the backend api in a team of 4 developers, integrating features such as email services.",
+        "Integrated new features into the Digivet application.",
+        "Tools: React-Native // Apollo GraphQL, Gatsby, React, Ant Design // Node.js, MongoDB, Apollo GraphQL(Server).",
       ],
     },
-    duration: "Feb 2010 - Sept 2011 | Pawtucket, RI",
+    duration: "Jan 2021 - Present | Remote",
   },
   {
     company: {
-      name: "WESPIRE",
-      link: "#",
-      logo: "/wespire-logo.jpg",
+      name: "Safe-x",
+      link: "http://www.safex.work/",
+      logo: "/safex-logo.jpg",
     },
-    profile: "Full Stack Developer",
+    profile: "Full Stack Development Intern",
     summary:
-      "SaaS platform that enables enterprise companies to build, run, and measure their positive impact campaigns.",
+      "Safe-x is a tool for businesses to ensure a safe working environment amidst this Pandemic by monitoring Heath, Social distancing, and Contact tracing of its Employees.",
     details: {
       product: [
-        "Contribute core features across entire stack (20k+ lines of code, 250+ pulls)",
-        "Lead front-end development, creating and documenting app-wide design system",
-        "Oversee transition from page-based styles to modular component styles",
-        "Guide best practices around accessible, semantic UI/UX",
-        "Tools: Ruby, Rails, PostgreSQL // React, JS, jQuery // Sass // HTML, JSX, Haml",
+        "Contributed to the developed of MVP from scratch.",
+        `Collaborated with the team to develop Safe-x mobile app, integrating features
+         such as authentication, device storage, etc.`,
+        "Developed the backend API and worked on integrating with frontend.",
+        "Contributed to the company website, creating skeleton for landing page and blog.",
+        "Tools: React-Native // React, NextJs, Gatsby, Ant Design // Node.js, PostgreSQL.",
       ],
     },
-    duration: "Feb 2010 - Sept 2011 | Pawtucket, RI",
+    duration: "Jun 2020 - July 2020 | Remote",
   },
 ];
 

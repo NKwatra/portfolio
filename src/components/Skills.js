@@ -3,102 +3,115 @@ import SectionHeader from "./SectionHeader";
 
 const skills = [
   {
-    heading: "HTML",
+    heading: "Programming Languages",
     items: [
       {
-        label: "HTML5",
-        image: "/html5.png",
+        label: "JavaScript",
+        image: "/javascript-logo.svg",
       },
       {
-        label: "JSX",
-        image: "/react.png",
+        label: "Java",
+        image: "/java-logo.jpg",
       },
       {
-        label: "HAML",
-        image: "/haml.png",
+        label: "C++",
+        image: "/c++logo.png",
       },
       {
-        label: "JADE",
-        image: "/jade.png",
+        label: "C",
+        image: "/c-logo.png",
       },
       {
-        label: "JEKYLL",
-        image: "/jekyll.png",
+        label: "SQL",
+        image: "/sql-logo.png",
       },
     ],
   },
   {
-    heading: "HTML",
+    heading: "FRONT END",
     items: [
       {
         label: "HTML5",
         image: "/html5.png",
       },
       {
-        label: "JSX",
+        label: "CSS3",
+        image: "/css3.png",
+      },
+      {
+        label: "React",
         image: "/react.png",
       },
       {
-        label: "HAML",
-        image: "/haml.png",
+        label: "Bootstrap",
+        image: "/bootstrap.png",
       },
       {
-        label: "JADE",
-        image: "/jade.png",
-      },
-      {
-        label: "JEKYLL",
-        image: "/jekyll.png",
+        label: "Ant Design",
+        image: "/antd.svg",
       },
     ],
   },
   {
-    heading: "HTML",
+    heading: "BACK END",
     items: [
       {
-        label: "HTML5",
-        image: "/html5.png",
+        label: "Node.js",
+        image: "/nodejs.png",
       },
       {
-        label: "JSX",
-        image: "/react.png",
+        label: "MongoDB",
+        image: "/mongodb.png",
       },
       {
-        label: "HAML",
-        image: "/haml.png",
+        label: "Express",
+        image: "/express.png",
       },
       {
-        label: "JADE",
-        image: "/jade.png",
+        label: "GraphQL",
+        image: "/graphql.svg",
       },
       {
-        label: "JEKYLL",
-        image: "/jekyll.png",
+        label: "Next.js",
+        image: "/nextjs.png",
       },
     ],
   },
   {
-    heading: "HTML",
+    heading: "Mobile App",
     items: [
       {
-        label: "HTML5",
-        image: "/html5.png",
+        label: "Android",
+        image: "/android.jpeg",
       },
       {
-        label: "JSX",
+        label: "React-Native",
         image: "/react.png",
       },
+    ],
+  },
+  {
+    heading: "Tools",
+    items: [
       {
-        label: "HAML",
-        image: "/haml.png",
+        label: "Git",
+        image: "/git-logo.png",
       },
       {
-        label: "JADE",
-        image: "/jade.png",
+        label: "Android Studio",
+        image: "/android-studio.jpeg",
       },
       {
-        label: "JEKYLL",
-        image: "/jekyll.png",
+        label: "VS Code",
+        image: "/vscode.png",
+      },
+      {
+        label: "Npm",
+        image: "/npm-logo.png",
+      },
+      {
+        label: "Github",
+        image: "/github.png",
       },
     ],
   },
@@ -131,7 +144,7 @@ const SkillRow = ({ heading, items }) => {
 
 export default function Skills() {
   return (
-    <section id="Skills">
+    <section id="Skills" className="pb-3">
       <SectionHeader title="Skills" />
       {skills.map((skill) => (
         <SkillRow {...skill} />

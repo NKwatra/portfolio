@@ -63,6 +63,31 @@
   border-left: solid 3px #424242;
 }
 
+.aboutActive {
+  border-left: solid 3px var(--teal);
+}
+.experienceActive {
+  border-left: solid 3px var #00bcd4;
+}
+.projectActive {
+  border-left: solid 3px #3f51b5;
+}
+.skillActive {
+  border-left: solid 3px #9c27b0;
+}
+.educationActive {
+  border-left: solid 3px #ff9800;
+}
+.contactActive {
+  border-left: solid 3px #795548;
+}
+.blogActive {
+  border-left: solid 3px #fbc02d;
+}
+.resumeActive {
+  border-left: solid 3px #424242;
+}
+
 .navItem:hover {
   background-color: #fafafa;
 }
