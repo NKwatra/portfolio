@@ -38,7 +38,7 @@ const projects = [
   {
     title: "Portfolio",
     github: "https://github.com/NKwatra/portfolio",
-    live: "https://portfolio-six-gilt.vercel.app",
+    live: "https://portfolio.nishkarshkwatra.live",
     desc: "Portfolio website of Nishkarsh Kwatra (this website).",
     cover: "/portfolio.png",
     techStack: ["Developed using <strong>NextJs</strong> and Bootstrap."],
