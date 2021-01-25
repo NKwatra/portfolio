@@ -37,11 +37,11 @@ const projects = [
   },
   {
     title: "Portfolio",
-    github: "https://github.com/NKwatra/Protfolio",
+    github: "https://github.com/NKwatra/portfolio",
     live: "https://portfolio-six-gilt.vercel.app",
     desc: "Portfolio website of Nishkarsh Kwatra (this website).",
     cover: "/portfolio.png",
-    techStack: ["Developed using <strong>NextJs</strong> and bootsrap."],
+    techStack: ["Developed using <strong>NextJs</strong> and Bootstrap."],
   },
 ];
 
