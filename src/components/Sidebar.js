@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { BsEnvelopeFill, BsFillPersonFill } from "react-icons/bs";
-import {
-  FaChartLine,
-  FaGraduationCap,
-  FaPen,
-  FaStickyNote,
-} from "react-icons/fa";
+import { FaChartLine, FaGraduationCap, FaStickyNote } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiBarChart2Fill, RiTableLine } from "react-icons/ri";
 import { Link } from "react-scroll";
@@ -53,12 +48,12 @@ const options = [
     activeClass: styles.contactActive,
     icon: <BsEnvelopeFill style={{ fontSize: "2rem", color: "#795548" }} />,
   },
-  {
-    title: "Blog",
-    className: styles.blog,
-    activeClass: styles.blogActive,
-    icon: <FaPen style={{ color: "#fbc02d", fontSize: "2rem" }} />,
-  },
+  // {
+  //   title: "Blog",
+  //   className: styles.blog,
+  //   activeClass: styles.blogActive,
+  //   icon: <FaPen style={{ color: "#fbc02d", fontSize: "2rem" }} />,
+  // },
   {
     title: "Resume",
     className: styles.resume,

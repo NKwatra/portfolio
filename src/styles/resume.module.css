@@ -1,0 +1,21 @@
+.download {
+  background-color: var(--teal);
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.download:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .download {
+    font-size: 1.3rem;
+  }
+  .buttonsContainer {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+}

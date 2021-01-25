@@ -126,7 +126,7 @@ const SkillRow = ({ heading, items }) => {
       <div className={styles.line} />
       <div className="d-flex flex-wrap pt-3">
         {items.map((item) => (
-          <div className={styles.skillContainer}>
+          <div className={styles.skillContainer} key={item.label}>
             <div>
               <img
                 src={item.image}
@@ -147,7 +147,7 @@ export default function Skills() {
     <section id="Skills" className="pb-3">
       <SectionHeader title="Skills" />
       {skills.map((skill) => (
-        <SkillRow {...skill} />
+        <SkillRow {...skill} key={skill.label} />
       ))}
     </section>
   );

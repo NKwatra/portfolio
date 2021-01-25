@@ -7,6 +7,7 @@ import Experience from "../src/components/Experience";
 import Header from "../src/components/Header";
 import Home from "../src/components/Home";
 import Project from "../src/components/Project";
+import Resume from "../src/components/Resume";
 import Sidebar from "../src/components/Sidebar";
 import Skills from "../src/components/Skills";
 import styles from "../src/styles/index.module.css";
@@ -19,6 +20,7 @@ const Sections = [
   "Skills",
   "Education",
   "Contact",
+  "Resume",
 ];
 
 export default function Index() {
@@ -75,6 +77,7 @@ export default function Index() {
         <Skills />
         <Education />
         <Contact />
+        <Resume />
       </main>
     </div>
   );
