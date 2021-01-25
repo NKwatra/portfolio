@@ -35,6 +35,14 @@ const projects = [
       "Used ViewPager and Fragments for tabs and screens.",
     ],
   },
+  {
+    title: "Portfolio",
+    github: "https://github.com/NKwatra/Protfolio",
+    live: "https://portfolio-six-gilt.vercel.app",
+    desc: "Portfolio website of Nishkarsh Kwatra (this website).",
+    cover: "/portfolio.png",
+    techStack: ["Developed using <strong>NextJs</strong> and bootsrap."],
+  },
 ];
 
 const Tooltip = ({ label, active }) => {
