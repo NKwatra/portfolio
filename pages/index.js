@@ -60,7 +60,7 @@ export default function Index() {
     <div className="container-fluid px-0">
       <Head>
         <title>Nishkarsh Kwatra | Full Stack Developer</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/no-bugs.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
