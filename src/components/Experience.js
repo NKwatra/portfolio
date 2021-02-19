@@ -55,10 +55,8 @@ const experience = [
       "Frontier Techworks is a global design and engineering consultancy specializing in React.js, React Native, GraphQL, Node.js, and the extended JavaScript ecosystem.",
     details: {
       product: [
-        'Contributed to development of system for client <a href="http://digivet.co" target="_blank">DigiVet</a>.',
-        "Collaborated with a team of 6 to develop the Dashboard for DigiVet.",
-        "Developed the backend api in a team of 4 developers, integrating features such as email services.",
-        "Integrated new features into the Digivet application.",
+        "Developed the Loulu mobile application for a theatre company, integrating features like videos, audios, gestures, etc.",
+        "Collaborated with a team of 4 to create a Full Stack Web application and Mobile application for the DigiVet client, integation features like rich text editor, email notifications, etc.",
         "Tools: React-Native // Apollo GraphQL, Gatsby, React, Ant Design // Node.js, MongoDB, Apollo GraphQL(Server).",
       ],
     },
