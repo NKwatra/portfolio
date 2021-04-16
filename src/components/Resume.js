@@ -25,7 +25,7 @@ export default function Resume() {
         <Button
           icon={<FaGoogleDrive />}
           label={"Checkout"}
-          href="https://drive.google.com/file/d/1wDuU3JOqIcwFUpg9ADidMTS2vpNmXuJL/view?usp=sharing"
+          href="https://drive.google.com/file/d/19kgB0GDknnqBfqHbv-InoWMUx3F2AqBT/view?usp=sharing"
         />
         <Button
           icon={<FiDownload />}
